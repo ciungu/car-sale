@@ -1,0 +1,109 @@
+:root {
+    --clr-sedan : hsl(31, 77%, 52%);
+    --clr-suv: hsl(184, 100%, 22%);
+    --clr-luxury: hsl(179, 100%, 13%);
+    --clr-paragraph: hsla(0, 0%, 100%, 0.75);
+    --clr-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+    --ff-deca:'Lexend Deca', sans-serif;
+    --ff-display: 'Big Shoulders Display', cursive;
+}
+
+.main-card {
+    background-color: var(--clr-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-card div {
+    width: 210px;
+    height: 443.33px;
+}
+
+img {
+    padding: 50px 0 0;
+}
+
+h1 {
+    color: var(--clr-gray);
+    font-family: var(--ff-display);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    
+}
+
+p {
+    color: var(--clr-paragraph);
+    font-size: 15px;
+    line-height: 25px;
+    font-family: var(--ff-deca);
+}
+
+.suv-card {
+    background-color: var(--clr-suv);
+    padding: 0 50px 50px;
+}
+
+.sedan-card {
+    background-color: var(--clr-sedan);
+    border-radius: 8px 0 0 8px;    
+    padding: 0 50px 50px;
+}
+
+.luxury-card {
+    background-color: var(--clr-luxury);
+    border-radius: 0 8px 8px 0;    
+    padding: 0 50px 50px;
+}
+
+.card-margin {
+    position: relative;
+}
+
+
+
+div div a {
+    font-family: var(--ff-deca);
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: var(--clr-gray);
+    position: absolute;
+    bottom: 0;
+}
+
+#sedan-button {
+    color: var(--clr-sedan);
+    border: 2px solid var(--clr-gray);
+}
+
+#suv-button {
+    color: var(--clr-suv);    
+    border: 2px solid var(--clr-gray);
+}
+
+#luxury-button {
+    color: var(--clr-luxury);
+    border: 2px solid var(--clr-gray);
+}
+
+a#sedan-button:hover {
+    color: var(--clr-gray);
+    background-color: var(--clr-sedan);
+    border: 2px solid var(--clr-gray);
+}
+
+a#suv-button:hover {
+    color: var(--clr-gray);
+    background-color: var(--clr-suv);
+    border: 2px solid var(--clr-gray);
+}
+
+a#luxury-button:hover {
+    color: var(--clr-gray);
+    background-color: var(--clr-luxury);
+    border: 2px solid var(--clr-gray);
+}
